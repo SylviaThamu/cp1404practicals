@@ -1,2 +1,17 @@
+# Ignore PyCharm project files
 .idea/
-*/__pycache__
+
+# Ignore Python cache folders
+__pycache__/
+*/__pycache__/
+
+# Ignore compiled Python files
+*.pyc
+
+# Ignore Mac and system files (optional)
+.DS_Store
+
+# Ignore virtual environments (if any)
+venv/
+env/
+
