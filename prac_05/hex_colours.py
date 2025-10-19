@@ -1,6 +1,8 @@
 """
 CP1404/CP5632 Practical
 Hexadecimal colour lookup
+Estimate: 10 minutes
+Actual:   20 minutes
 """
 
 COLOUR_CODES = {
@@ -15,3 +17,11 @@ COLOUR_CODES = {
     "aquamarine4": "#458b74",
     "azure1": "#f0ffff"
 }
+
+colour_name = input("Enter a colour name: ").lower()
+while colour_name != "":
+    try:
+        print(f"The code for {colour_name} is {COLOUR_CODES[colour_name]}")
+    except KeyError:
+        print("Invalid colour name.")
+    colour_name = input("Enter a colour name: ").lower()
